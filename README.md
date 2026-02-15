@@ -1,4 +1,4 @@
-# Movie Web Site 🎬
+# Society Movies 🎬
 
 A modern, responsive movie discovery web application built with React, Redux, and Vite. Browse popular movies, save favorites, and get in touch through the contact form.
 
@@ -19,6 +19,7 @@ A modern, responsive movie discovery web application built with React, Redux, an
 - 🔄 Redux Toolkit for state management
 - ⚡ Vite for fast development and building
 - 📱 React Icons for beautiful icons
+- 📧 emailjs-com for contact form
 - 🎬 The Movie Database (TMDB) API for movie data
 
 ## Getting Started 🚀

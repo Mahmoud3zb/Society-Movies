@@ -1,0 +1,31 @@
+/* Favorite.css */
+.favorite-page {
+  min-height: 100vh;
+}
+
+/* Animation for empty state */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+/* Hover effect for the empty state heart */
+.favorite-page .text-red-500 .FaRegHeart {
+  animation: pulse 2s infinite;
+}
+
+/* Transition for the remove button */
+.remove-btn {
+  transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+  transform: scale(1.1);
+  background-color: rgba(239, 68, 68, 0.9) !important;
+}

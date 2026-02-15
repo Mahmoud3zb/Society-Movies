@@ -1,0 +1,37 @@
+.movie-card {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  overflow: hidden ;
+}
+
+  .movie-card:hover {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.01), 
+                0 1px 2px -1px rgba(0, 0, 0, 0.05);
+    transform: translateY(-1px);
+  }
+
+
+.movie-card img {
+  transition: opacity 0.3s ease;
+}
+
+.movie-card img[loading="lazy"] {
+  opacity: 10;
+}
+
+.movie-card:hover img {
+  transform: scale(1.05);
+  opacity: 1;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.movie-card img.loaded {
+  opacity: 1;
+}
+
+
+@media (max-width: 640px) {
+  .movie-card {
+    max-width: 100%;
+  }
+}

@@ -1,8 +1,12 @@
 import { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
 import './ScrollToTop.css';
 
 const ScrollToTop = () => {
+
+  const { pathname } = useLocation();
+
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -21,9 +25,10 @@ const ScrollToTop = () => {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     window.addEventListener('scroll', toggleVisibility);
     return () => window.removeEventListener('scroll', toggleVisibility);
-  }, []);
+  }, [pathname]);
 
   return (
     <div className="fixed bottom-8 right-8 z-50 transition-opacity duration-300">

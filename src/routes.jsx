@@ -42,9 +42,9 @@ const router = createBrowserRouter(
       element: <ErrorPage />,
     },
   ],
-  {
-    basename: "/Movie-Web-Site",
-  },
+  // {
+  //   basename: "/Movie-Web-Site",
+  // },
 );
 
 export default router;
